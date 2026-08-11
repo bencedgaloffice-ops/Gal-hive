@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Egyszármazású, hidegen pörgetett nyers méz Diósd kaptáraiból — nyomon követhető az első csepptől." />
+  <title>Diósdi Méhes — Nyers méz, egyetlen tájról</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200..500;1,9..144,300..500&family=Work+Sans:wght@300;400&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-locked">
+
+  <!-- ============================================================
+       1. ENTRANCE GATE
+  ============================================================ -->
+  <div class="gate" id="gate" role="dialog" aria-label="Belépés" aria-modal="true">
+    <div class="gate__inner">
+      <div class="orb orb--gate gate__orb" aria-hidden="true"></div>
+      <h1 class="gate__wordmark">
+        <span data-brand-first>Diósdi</span>
+        <em class="brass" data-brand-second>Méhes</em>
+      </h1>
+      <p class="gate__tagline mono">Nyers méz · Egyetlen származás · Diósd</p>
+      <button class="gate__enter" id="gateEnter" type="button">
+        <span class="gate__ring" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.4">
+            <path d="M12 19V5M6 11l6-6 6 6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+        <span class="gate__enter-label mono">Belépés</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       2. STICKY NAV
+  ============================================================ -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#top" class="nav__wordmark">
+        <span data-brand-first>Diósdi</span> <em class="brass" data-brand-second>Méhes</em>
+      </a>
+      <nav class="nav__links mono" aria-label="Fő navigáció">
+        <a href="#story">Történet</a>
+        <a href="#process">Folyamat</a>
+        <a href="#products">Termékek</a>
+        <a href="#markets">Piacok</a>
+        <a href="#contact">Kapcsolat</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============================================================
+         3. HERO
+    ============================================================ -->
+    <section class="hero reveal" id="hero">
+      <div class="wrap">
+        <p class="eyebrow mono">2025-ös szüret · Diósd, Magyarország</p>
+        <h2 class="hero__title display">
+          Nyers méz,<br />semmi <em class="brass">más</em>.
+        </h2>
+        <div class="rule" aria-hidden="true"></div>
+        <p class="hero__lede lede">
+          Egyszármazású, hidegen pörgetett méz Diósd kaptáraiból — nyomon
+          követhető az első csepptől.
+        </p>
+        <div class="hero__actions">
+          <a href="#products" class="btn">Termékek megtekintése</a>
+          <a href="#story" class="link-underline">A történetünk</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. STORY
+    ============================================================ -->
+    <section class="story reveal" id="story">
+      <div class="wrap story__grid">
+        <div class="story__copy">
+          <p class="eyebrow mono">A történet</p>
+          <h3 class="section-title display">
+            Egy dombon, három <em class="brass">generáció</em> óta.
+          </h3>
+          <p>
+            A diósdi domb ugyanaz maradt, mint amikor nagyapánk az első kaptárt
+            kitette 1962-ben. A méhek ugyanazokat a hársakat és akácokat járják,
+            mi pedig ugyanúgy dolgozunk: türelemmel, keveretlen mézzel, sietség
+            nélkül.
+          </p>
+          <p>
+            Nem keverünk tételeket, nem hőkezelünk, és nem hígítunk. Ami a
+            kaptárban készült, az kerül az üvegbe.
+          </p>
+        </div>
+        <div class="story__figures">
+          <div class="figure">
+            <span class="figure__num display">1962</span>
+            <span class="figure__cap mono">Az első kaptár</span>
+          </div>
+          <div class="figure">
+            <span class="figure__num display">38</span>
+            <span class="figure__cap mono">Kaptár a diósdi dombon</span>
+          </div>
+          <div class="figure">
+            <span class="figure__num display">100%</span>
+            <span class="figure__cap mono">Nyers, keveretlen méz</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. PROCESS / TRACEABILITY
+    ============================================================ -->
+    <section class="process reveal" id="process">
+      <div class="wrap">
+        <p class="eyebrow mono">Folyamat</p>
+        <h3 class="section-title display">
+          Négy lépés, egy <em class="brass">tétel</em>.
+        </h3>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num mono">01</span>
+            <h4 class="step__title">Ellenőrzés</h4>
+            <p class="step__body">Minden kaptárt kézzel, egyenként vizsgálunk.</p>
+          </li>
+          <li class="step">
+            <span class="step__num mono">02</span>
+            <h4 class="step__title">Pörgetés</h4>
+            <p class="step__body">Hidegen, hőkezelés nélkül pörgetjük ki.</p>
+          </li>
+          <li class="step">
+            <span class="step__num mono">03</span>
+            <h4 class="step__title">Vizsgálat</h4>
+            <p class="step__body">Laboratóriumi tisztaság- és eredetvizsgálat.</p>
+          </li>
+          <li class="step">
+            <span class="step__num mono">04</span>
+            <h4 class="step__title">Palackozás</h4>
+            <p class="step__body">Kis tételben, kézzel, tételszámmal.</p>
+          </li>
+        </ol>
+
+        <div class="lot">
+          <span class="lot__label mono">Minta tételkód</span>
+          <span class="lot__code mono">DM · 2025 · A14 · HU</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. PRODUCTS (LIGHT SECTION)
+    ============================================================ -->
+    <section class="products reveal" id="products">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--wine mono">Termékek</p>
+        <h3 class="section-title section-title--dark display">
+          Idei tételek, <em class="wine-em">korlátozott</em> mennyiségben.
+        </h3>
+
+        <div class="cards">
+          <article class="card">
+            <div class="orb orb--card" aria-hidden="true"></div>
+            <h4 class="card__name display">Akácméz</h4>
+            <p class="card__variety mono">Acacia · Lot A14</p>
+            <p class="card__desc">Világos, lágy, a kristályosodásnak sokáig ellenáll.</p>
+            <span class="card__tag mono">Elérhető</span>
+          </article>
+
+          <article class="card">
+            <div class="orb orb--card" aria-hidden="true"></div>
+            <h4 class="card__name display">Hársméz</h4>
+            <p class="card__variety mono">Linden · Lot L07</p>
+            <p class="card__desc">Mentolos, hűvös utóízzel, borostyán árnyalattal.</p>
+            <span class="card__tag mono">Elérhető</span>
+          </article>
+
+          <article class="card">
+            <div class="orb orb--card" aria-hidden="true"></div>
+            <h4 class="card__name display">Vadvirágméz</h4>
+            <p class="card__variety mono">Wildflower · Lot W22</p>
+            <p class="card__desc">Teljes testű, évszakról évszakra változó karakter.</p>
+            <span class="card__tag card__tag--limited mono">Korlátozott</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. MARKETS
+    ============================================================ -->
+    <section class="markets reveal" id="markets">
+      <div class="wrap">
+        <p class="eyebrow mono">Piacok</p>
+        <h3 class="section-title display">
+          Három ország, egy <em class="brass">tétel</em>.
+        </h3>
+
+        <div class="markets__row">
+          <div class="market">
+            <span class="market__code mono">HU</span>
+            <p class="market__line">Diósd és Budapest, közvetlen kiszállítással.</p>
+          </div>
+          <div class="market">
+            <span class="market__code mono">US</span>
+            <p class="market__line">Válogatott csemegeüzletek a keleti parton.</p>
+          </div>
+          <div class="market">
+            <span class="market__code mono">JP</span>
+            <p class="market__line">Tokiói prémium importőrökön keresztül.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. DISCOUNT SIGNUP
+    ============================================================ -->
+    <section class="signup reveal" id="signup">
+      <div class="wrap signup__inner">
+        <div class="signup__text">
+          <p class="eyebrow mono">Feliratkozás</p>
+          <h3 class="signup__title display">
+            10% az első <em class="brass">tételre</em>.
+          </h3>
+        </div>
+        <form class="signup__form" id="signupForm" novalidate>
+          <div class="field field--inline">
+            <label for="signupEmail" class="sr-only">E-mail cím</label>
+            <input
+              type="email"
+              id="signupEmail"
+              name="email"
+              placeholder="e-mail cím"
+              required
+            />
+            <button type="submit" class="submit-text mono">
+              Feliratkozom <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <p class="form__note" id="signupNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         9. CONTACT
+    ============================================================ -->
+    <section class="contact reveal" id="contact">
+      <div class="wrap contact__grid">
+        <div class="contact__intro">
+          <p class="eyebrow mono">Kapcsolat</p>
+          <h3 class="section-title display">
+            Nagykereskedelmi <em class="brass">érdeklődés</em>?
+          </h3>
+          <p class="contact__prompt">
+            Egyedi kérés, viszonteladás vagy exportlehetőség — írjon néhány
+            sort, és jelentkezünk.
+          </p>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="contactName" class="mono">Név</label>
+            <input type="text" id="contactName" name="name" required />
+          </div>
+          <div class="field">
+            <label for="contactEmail" class="mono">E-mail</label>
+            <input type="email" id="contactEmail" name="email" required />
+          </div>
+          <div class="field">
+            <label for="contactMessage" class="mono">Üzenet</label>
+            <textarea id="contactMessage" name="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn">Küldés</button>
+          <p class="form__note" id="contactNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       10. FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="wrap footer__inner mono">
+      <span data-brand-full>Diósdi Méhes</span>
+      <span>Diósd, Magyarország</span>
+      <span>© 2025</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
